@@ -1,4 +1,18 @@
 Sbic1::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/news"
+
+  get "pages/event"
+
+  get "pages/enquiry"
+
+  get "pages/service"
+
+  get "pages/about"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
