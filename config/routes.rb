@@ -1,6 +1,6 @@
 Sbic1::Application.routes.draw do
 
-  match '/home', :to => 'pages#home'
+  
   match '/news', :to => 'pages#news'
   match '/event',   :to => 'pages#event'
   match '/survey',    :to => 'pages#survey'
