@@ -40,6 +40,18 @@ describe PagesController do
     end
   end
 
+  describe "GET 'survey'" do
+    it "should be successful" do
+      get 'survey'
+      response.should be_success
+    end
+    it "should have the right title" do
+      get 'survey'
+      response.should have_selector("title",
+                        :content => "Surrey Biodiversity Information Centre | Survey")
+    end
+  end
+  
   describe "GET 'enquiry'" do
     it "should be successful" do
       get 'enquiry'

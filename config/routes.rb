@@ -1,18 +1,17 @@
 Sbic1::Application.routes.draw do
-  get "pages/home"
 
-  get "pages/news"
+  match '/home', :to => 'pages#home'
+  match '/news', :to => 'pages#news'
+  match '/event',   :to => 'pages#event'
+  match '/survey',    :to => 'pages#survey'
+  match '/enquiry', :to => 'pages#enquiry'
+  match '/service',   :to => 'pages#service'
+  match '/about',   :to => 'pages#about'
+  match '/contact', :to => 'pages#contact'
+  
+  root :to => 'pages#home'
 
-  get "pages/event"
-
-  get "pages/enquiry"
-
-  get "pages/service"
-
-  get "pages/about"
-
-  get "pages/contact"
-
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

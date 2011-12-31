@@ -11,6 +11,10 @@ class PagesController < ApplicationController
     @title = "Event"
   end
 
+  def survey
+    @title = "Survey"
+  end
+
   def enquiry
     @title = "Enquiry"
   end
