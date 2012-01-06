@@ -7,8 +7,12 @@ class PagesController < ApplicationController
     @title = "News"
   end
 
-  def event
-    @title = "Event"
+  def submit
+    @title = "Submit"
+  end
+
+  def record
+    @title = "Record"
   end
 
   def survey

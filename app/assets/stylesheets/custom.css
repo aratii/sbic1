@@ -19,11 +19,16 @@ section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #eaedf4;
 }
 
 section h1 {
+  font-family: serif;
+  font-style: italic;
+  color:#007789;
   font-size: 200%;
+  background: url("underline.jpg") no-repeat scroll left bottom transparent;
+  padding-bottom: 10px;
 }
 
 /* Links */
@@ -76,6 +81,7 @@ nav ul li a:hover {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+  background: #eaedf4;
 }
 
 footer {

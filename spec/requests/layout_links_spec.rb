@@ -12,9 +12,14 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "News")
   end
 
-  it "should have an Event page at '/event'" do
-    get '/event'
-    response.should have_selector('title', :content => "Event")
+  it "should have an Submit page at '/submit'" do
+    get '/submit'
+    response.should have_selector('title', :content => "Submit")
+  end
+
+  it "should have an Record page at '/record'" do
+    get '/record'
+    response.should have_selector('title', :content => "Record")
   end
   
   it "should have a Enquiry page at '/enquiry'" do
@@ -37,4 +42,8 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Contact")
   end
   
+  it "should have a signup page at '/signup'" do
+    get '/signup'
+    response.should have_selector('title', :content => "Sign up")
+  end
 end

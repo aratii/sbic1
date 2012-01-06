@@ -28,18 +28,30 @@ describe PagesController do
     end
   end
 
-  describe "GET 'event'" do
+  describe "GET 'submit'" do
     it "should be successful" do
-      get 'event'
+      get 'submit'
       response.should be_success
     end
     it "should have the right title" do
-      get 'event'
+      get 'submit'
       response.should have_selector("title",
-                        :content => "Surrey Biodiversity Information Centre | Event")
+                        :content => "Surrey Biodiversity Information Centre | Submit")
     end
   end
 
+  describe "GET 'record'" do
+    it "should be successful" do
+      get 'record'
+      response.should be_success
+    end
+    it "should have the right title" do
+      get 'record'
+      response.should have_selector("title",
+                        :content => "Surrey Biodiversity Information Centre | Record")
+    end
+  end
+  
   describe "GET 'survey'" do
     it "should be successful" do
       get 'survey'

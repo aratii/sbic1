@@ -1,8 +1,10 @@
 Sbic1::Application.routes.draw do
 
-  
+  match '/signup',  :to => 'users#new'
+
   match '/news', :to => 'pages#news'
-  match '/event',   :to => 'pages#event'
+  match '/submit',   :to => 'pages#submit'
+  match '/record',    :to => 'pages#record'
   match '/survey',    :to => 'pages#survey'
   match '/enquiry', :to => 'pages#enquiry'
   match '/service',   :to => 'pages#service'
@@ -11,7 +13,6 @@ Sbic1::Application.routes.draw do
   
   root :to => 'pages#home'
 
- 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
