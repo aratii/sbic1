@@ -1,10 +1,12 @@
 Sbic1::Application.routes.draw do
-
+resources :records
+  
+  match '/recordSpecies',  :to => 'records#new'
+  
   match '/signup',  :to => 'users#new'
 
   match '/news', :to => 'pages#news'
   match '/submit',   :to => 'pages#submit'
-  match '/record',    :to => 'pages#record'
   match '/survey',    :to => 'pages#survey'
   match '/enquiry', :to => 'pages#enquiry'
   match '/service',   :to => 'pages#service'

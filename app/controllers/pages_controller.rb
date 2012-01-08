@@ -11,10 +11,6 @@ class PagesController < ApplicationController
     @title = "Submit"
   end
 
-  def record
-    @title = "Record"
-  end
-
   def survey
     @title = "Survey"
   end

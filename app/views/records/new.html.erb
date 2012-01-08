@@ -1,0 +1,54 @@
+<h1>Record Species</h1>
+
+<%= form_for(@record) do |f| %>
+<%= render 'shared/error_messages' %>
+
+ <table>
+   <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :sex %> <b>(Stage/State)</b></td>
+    <td><%= f.text_field :sex %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :quantity %></td>
+    <td><%= f.text_field :quantity %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :location %></td>
+    <td><%= f.text_field :location %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :gridRef %></td>
+    <td><%= f.text_field :gridRef %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :recorder %></td>
+    <td><%= f.text_field :recorder %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :date %></td>
+    <td><%= f.text_field :date %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :reference %></td>
+    <td><%= f.text_field :reference %></td>
+   </tr>
+   <tr>
+    <td><%= f.label :comment %></td>
+    <td><%= f.text_area :comment %></td>
+   </tr>
+   <tr><td></td>
+   <div class="actions">
+    <td><%= f.submit "Record Species" %></td>
+   </div>
+   </tr>
+   
+</table>
+<% end %>
+
+
+
+
