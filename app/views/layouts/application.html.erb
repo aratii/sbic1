@@ -9,11 +9,14 @@
     <font color="#007789">
     <div class="container">     
       <%= render 'layouts/header' %>
-      <section class="round">        
-           <table width = "938" >
+      <section class="round">
+          <table width = "938" >
                <tr>
                   <td width = "658" style="vertical-align:top;">
-                      <%= yield %>
+                       <% flash.each do |key, value| %>
+                         <div class="flash <%= key %>"><%= value %></div>
+                       <% end %>
+                       <%= yield %>
                   </td>
                   <%= render 'layouts/sidemenu' %>		  
                </tr>
