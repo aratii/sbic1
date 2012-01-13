@@ -18,7 +18,7 @@
 
 class Record < ActiveRecord::Base
 
- attr_accessible :name, :location, :gridRef, :recorder
+ attr_accessible :name, :sex, :quantity, :location, :gridRef, :recorder, :date, :reference, :comment
 
  validates(:name, :presence => true)
  validates(:location, :presence => true)

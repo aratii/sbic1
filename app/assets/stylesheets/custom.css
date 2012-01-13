@@ -138,3 +138,16 @@ footer nav {
   font-size: 12px;
   list-style: square;
 }
+
+ul.records {
+  margin-top: 1em;
+  background-color: #c5defc;
+  font-size: 20px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.records li {
+  list-style: square outside none;
+}

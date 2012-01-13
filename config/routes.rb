@@ -1,10 +1,14 @@
 Sbic1::Application.routes.draw do
+  get "sessions/new"
+
 resources :records
+resources :users
+resources :sessions, :only => [:new, :create, :destroy]
   
   match '/recordSpecies',  :to => 'records#new'
-  
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
   match '/signup',  :to => 'users#new'
-
   match '/news', :to => 'pages#news'
   match '/submit',   :to => 'pages#submit'
   match '/survey',    :to => 'pages#survey'

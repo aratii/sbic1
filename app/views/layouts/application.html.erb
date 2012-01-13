@@ -2,8 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <%= csrf_meta_tag %>
+    <%= javascript_include_tag :application %>  
     <%= render 'layouts/stylesheets' %>
+    <%= csrf_meta_tag %>
   </head>
   <body>
     <font color="#007789">

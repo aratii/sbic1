@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120110181623) do
+ActiveRecord::Schema.define(:version => 20120112154715) do
 
   create_table "records", :force => true do |t|
     t.string   "name"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20120110181623) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "salt"
+    t.boolean  "admin"
   end
 
 end
