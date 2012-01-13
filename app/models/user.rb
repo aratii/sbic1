@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
    attr_accessor :virtualPW
-   attr_accessible :name, :virtualPW, :admin
+   attr_accessible :name, :virtualPW
 
   before_save :encrypt_password
 
